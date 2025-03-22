@@ -2,6 +2,7 @@ import ChartOverview from '@/components/chart';
 import Sales from '@/components/sales';
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import ThemeSwitcher from '@/components/ui/theme-switcher';
 import { BadgeDollarSign, DollarSign, Percent, Users } from 'lucide-react';
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
         <Card>
           <CardHeader>
             <div className='flex items-center justify-center'>
-              <CardTitle className='text-lg sm:text-xl text-gray-800 select-none'>
+              <CardTitle className='text-lg sm:text-xl text-gray-800 dark:text-gray-500 select-none'>
                 Total vendas
               </CardTitle>
               <DollarSign className='ml-auto w-4 h-4' />
@@ -28,7 +29,7 @@ export default function Home() {
         <Card>
           <CardHeader>
             <div className='flex items-center justify-center'>
-              <CardTitle className='text-lg sm:text-xl text-gray-800 select-none'>
+              <CardTitle className='text-lg sm:text-xl text-gray-800 dark:text-gray-500 select-none'>
                 Novos Clientes
               </CardTitle>
               <Users className='ml-auto w-4 h-4' />
@@ -45,7 +46,7 @@ export default function Home() {
         <Card>
           <CardHeader>
             <div className='flex items-center justify-center'>
-              <CardTitle className='text-lg sm:text-xl text-gray-800 select-none'>
+              <CardTitle className='text-lg sm:text-xl text-gray-800 dark:text-gray-500 select-none'>
                 Pedidos hoje
               </CardTitle>
               <Percent className='ml-auto w-4 h-4' />
@@ -62,7 +63,7 @@ export default function Home() {
         <Card>
           <CardHeader>
             <div className='flex items-center justify-center'>
-              <CardTitle className='text-lg sm:text-xl text-gray-800 select-none'>
+              <CardTitle className='text-lg sm:text-xl text-gray-800 dark:text-gray-500 select-none'>
                 Total pedidos
               </CardTitle>
               <BadgeDollarSign className='ml-auto w-4 h-4' />
